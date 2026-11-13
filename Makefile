@@ -210,6 +210,7 @@ endif
 
 dependencies-mac:  ## install dependencies for mac
 	HOMEBREW_NO_AUTO_UPDATE=1 brew bundle install
+	brew tap homebrew/core --force
 	brew tap-new local/old || true
 	brew extract --version=2.72 autoconf local/old
 	brew install local/old/autoconf@2.72
