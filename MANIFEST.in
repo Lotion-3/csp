@@ -40,3 +40,6 @@ global-exclude .DS_Store
 global-exclude *.so
 global-exclude *.dll
 global-exclude *.dylib
+
+# CI-check only (fork): vcpkg overlay port, see vcpkg.json
+graft ci-check-overlay-ports
